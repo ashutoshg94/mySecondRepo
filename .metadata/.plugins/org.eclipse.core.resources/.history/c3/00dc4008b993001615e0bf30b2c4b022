@@ -1,0 +1,22 @@
+package com.project2.selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class ClassB {
+
+	@Test
+	public void m1CB(){
+		
+		System.out.println("method1 of classB");
+		WebDriver driver=new FirefoxDriver();
+	}
+	@BeforeMethod
+    public void m2CB(){
+		
+		System.out.println("method2 of classB");
+	}
+	
+}

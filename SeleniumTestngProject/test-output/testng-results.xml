@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="165" started-at="2016-10-19T04:14:53Z" finished-at="2016-10-19T04:14:53Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="59" started-at="2016-10-19T04:14:53Z" finished-at="2016-10-19T04:14:53Z">
+      <class name="com.project2.selenium.ClassB">
+        <test-method status="PASS" signature="m6CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m6CB" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m6CB -->
+        <test-method status="PASS" signature="m3CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m3CB" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3CB -->
+        <test-method status="PASS" signature="m1CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m1CB" duration-ms="6" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1CB -->
+        <test-method status="PASS" signature="m4CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m4CB" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4CB -->
+        <test-method status="PASS" signature="m3CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m3CB" is-config="true" duration-ms="2" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3CB -->
+        <test-method status="PASS" signature="m2CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m2CB" duration-ms="2" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2CB -->
+        <test-method status="PASS" signature="m10CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m10CB" is-config="true" duration-ms="2" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m10CB -->
+        <test-method status="PASS" signature="m4CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m4CB" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4CB -->
+      </class> <!-- com.project2.selenium.ClassB -->
+      <class name="com.package1.selenium.ClassA">
+        <test-method status="PASS" signature="m5CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m5CA" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m5CA -->
+        <test-method status="PASS" signature="m6CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m6CA" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m6CA -->
+        <test-method status="PASS" signature="m8CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m8CB" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m8CB -->
+        <test-method status="PASS" signature="m8CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m8CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m8CA -->
+        <test-method status="PASS" signature="m7CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m7CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m7CA -->
+        <test-method status="PASS" signature="m3CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m3CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3CA -->
+        <test-method status="PASS" signature="m1CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m1CA" duration-ms="2" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1CA -->
+        <test-method status="PASS" signature="m9CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m9CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m9CA -->
+        <test-method status="PASS" signature="m10CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m10CA" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m10CA -->
+        <test-method status="PASS" signature="m11CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m11CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m11CA -->
+        <test-method status="PASS" signature="m3CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m3CA" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3CA -->
+        <test-method status="PASS" signature="m2CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m2CA" duration-ms="4" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2CA -->
+        <test-method status="PASS" signature="m9CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m9CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m9CA -->
+        <test-method status="PASS" signature="m10CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m10CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m10CA -->
+        <test-method status="PASS" signature="m11CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m11CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m11CA -->
+        <test-method status="PASS" signature="m13CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m13CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m13CA -->
+        <test-method status="PASS" signature="m9CB()[pri:0, instance:com.project2.selenium.ClassB@d2cc05a]" name="m9CB" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m9CB -->
+        <test-method status="PASS" signature="m15CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m15CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m15CA -->
+        <test-method status="PASS" signature="m12CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m12CA" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m12CA -->
+      </class> <!-- com.package1.selenium.ClassA -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="28" started-at="2016-10-19T04:14:53Z" finished-at="2016-10-19T04:14:53Z">
+      <class name="com.project2.selenium.ClassB">
+        <test-method status="PASS" signature="m6CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m6CB" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m6CB -->
+        <test-method status="PASS" signature="m8CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m8CB" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m8CB -->
+        <test-method status="PASS" signature="m1CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m1CB" duration-ms="2" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1CB -->
+        <test-method status="PASS" signature="m3CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m3CB" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3CB -->
+        <test-method status="PASS" signature="m4CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m4CB" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4CB -->
+        <test-method status="PASS" signature="m3CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m3CB" is-config="true" duration-ms="2" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3CB -->
+        <test-method status="PASS" signature="m2CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m2CB" duration-ms="7" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2CB -->
+        <test-method status="PASS" signature="m4CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m4CB" is-config="true" duration-ms="3" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4CB -->
+        <test-method status="PASS" signature="m10CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m10CB" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m10CB -->
+        <test-method status="PASS" signature="m9CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m9CB" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m9CB -->
+      </class> <!-- com.project2.selenium.ClassB -->
+      <class name="com.package1.selenium.ClassA">
+        <test-method status="PASS" signature="m4CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m4CA" is-config="true" duration-ms="13" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4CA -->
+        <test-method status="PASS" signature="m5CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m5CB" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m5CB -->
+        <test-method status="PASS" signature="m14CA()[pri:0, instance:com.package1.selenium.ClassA@4f933fd1]" name="m14CA" is-config="true" duration-ms="1" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m14CA -->
+        <test-method status="PASS" signature="m7CB()[pri:0, instance:com.project2.selenium.ClassB@4b9e13df]" name="m7CB" is-config="true" duration-ms="0" started-at="2016-10-19T09:44:53Z" finished-at="2016-10-19T09:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m7CB -->
+      </class> <!-- com.package1.selenium.ClassA -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

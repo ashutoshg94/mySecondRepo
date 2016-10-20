@@ -1,0 +1,63 @@
+package com.package1.selenium;
+
+import org.junit.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class ClassA {
+
+	@Test
+	public void m1CA(){
+		
+		System.out.println("test_case1 of classA");
+		WebDriver driver=new FirefoxDriver();
+		
+	}
+	@Test
+	public void m2CA(){
+		
+		System.out.println("test_case2 of classA");
+		//WebDriver driver=new FirefoxDriver();
+		
+	}
+	
+	@BeforeMethod
+    public void m3CA(){
+		
+		System.out.println("before method1 of classA");
+	}
+	@BeforeSuite
+    public void m4CA(){
+		
+		System.out.println(" before suite of classA");
+	}
+	@BeforeTest
+    public void m5CA(){
+		
+		System.out.println("before Test1 of classA");
+	}
+	@BeforeTest
+    public void m6CA(){
+		
+		System.out.println("before Test2 of classA");
+	}
+	@BeforeClass
+    public void m7CA(){
+		
+		System.out.println("before Class1 of classA");
+	}
+	@BeforeClass
+    public void m8CA(){
+		
+		System.out.println("before Class2 of classA");
+	}
+	@BeforeMethod
+    public void m9CA(){
+		
+		System.out.println("before methode2 of classA");
+	}
+}

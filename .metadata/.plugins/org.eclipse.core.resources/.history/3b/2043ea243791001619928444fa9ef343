@@ -1,0 +1,9 @@
+package com.project.selenium;
+
+import org.testng.annotations.Test;
+
+public class IrctcAutomationTest {
+
+	@Test
+	public void testScreenShotIrctc()
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+ <tests>
+  <test name="Test1">
+    <classes>
+      <class name="com.package1.selenium.ClassB"></class>
+      <class name="com.project2.selenium.ClassA"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+      
+      <!class name="com.project2.selenium.ClassB"/>
+    </classes>
+  </test> 
+  </tests>
+</suite> 

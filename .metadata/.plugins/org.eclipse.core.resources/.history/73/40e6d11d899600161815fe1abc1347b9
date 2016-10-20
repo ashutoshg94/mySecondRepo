@@ -1,0 +1,22 @@
+package com.selenium.project.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class IrctcLoginPage {
+
+	//locators
+	WebDriver driver;
+	
+	private By flightTickets=By.linkText("Flight Tickets");
+	
+	public IrctcLoginPage(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	public void clickOnFlightTickets(){
+		driver.findElement(flightTickets).click();
+	}
+	
+	
+}

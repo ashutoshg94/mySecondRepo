@@ -1,0 +1,49 @@
+package com.project.selenium;
+
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class MakeMyTripTest {
+
+	@Test
+	public void testBookDomesticHolidays() throws InterruptedException{
+		WebDriver driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://www.makemytrip.com/");
+		
+//		Select sel=new Select(driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div[1]/div[2]/ul/li[1]/a")));
+//		sel.selectByVisibleText("Domestic Holidays");
+		driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[2]/ul/li[1]/a")).click();
+		String pw=driver.getWindowHandle();
+		System.out.println(pw);
+		driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[1]/ul/li[5]/a/span")).click();
+		Set<String> allWin=driver.getWindowHandles();
+		for(String s:allWin){
+			driver.switchTo().window(s);
+			if(driver.getTitle().equals("Holiday Packages, Indian Holidays, Honeymoon Packages, India Tourism, Holidays India, Vacation Package : MakeMyTrip")){
+				break;
+			}
+		}
+		
+		driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[3]/div/div[4]/div[1]/div[1]/div/span[2]/input")).sendKeys("Jaipur");
+		//driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[3]/div/div[4]/div[1]/div[1]/div/span[2]/span/div/span/div[31]/p")).click();
+		driver.findElement(By.id("submit-btn-holiday")).click();
+		Thread.sleep(5000);
+		List<WebElement> explore=driver.findElements(By.xpath("//a[contains(@href,'javascript:void(0);')]"));
+		explore.get(0).click();
+		
+		
+//		Thread.sleep(5000);
+//		driver.close();
+		
+	}
+}

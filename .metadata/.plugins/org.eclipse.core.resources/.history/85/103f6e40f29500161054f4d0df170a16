@@ -1,0 +1,36 @@
+package com.selenium.project.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+
+public class IrctcFlightSearchPage {
+
+WebDriver driver;
+	
+	private By fromCity=By.xpath("//div[@id='where']/div[@class='containerfld']/input[@id='origin']");
+	private By toCity=By.xpath("//*[@id='destination']");
+	private By calender=By.xpath("//input[@name='departDate']/following-sibling::img");
+	private By departureDate=By.xpath("//div[@id='ui-datepicker-div']/div[1]//a[text()='23']");
+	private By adultsDropDownButton=By.xpath("//*[@id='noOfAdult']");
+	private By childDropDownButton=By.xpath("//*[@id='noOfChild']");
+	private By searchButton=By.xpath("//input[@name='submitVal']/following-sibling::div");
+	
+	public IrctcFlightSearchPage(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	
+	public void setFromCity(){
+		driver.findElement(fromCity).sendKeys("Delhi");
+		driver.findElement(fromCity).sendKeys(Keys.TAB);
+	}
+	public void toCity(){
+		driver.findElement(toCity).sendKeys("Jaipur");
+		driver.findElement(toCity).click();
+	}
+	public void selectDepartureDate(){
+		
+	}
+	
+}

@@ -1,0 +1,86 @@
+package com.project.selenium;
+
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class MakeMyTripTest {
+	
+	String firstChildWindow;
+	String secondChildWindow;
+	String thirdChildWindow;
+
+	@Test
+	public void testBookDomesticHolidays() throws InterruptedException{
+		WebDriver driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://www.makemytrip.com/");
+		
+//		Select sel=new Select(driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div[1]/div[2]/ul/li[1]/a")));
+//		sel.selectByVisibleText("Domestic Holidays");
+		driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[2]/ul/li[1]/a")).click();
+		String firstChildWindow=driver.getWindowHandle();
+		System.out.println(firstChildWindow);
+		driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[1]/ul/li[5]/a/span")).click();
+		Set<String> allWin=driver.getWindowHandles();
+		for(String s:allWin){
+			driver.switchTo().window(s);
+			secondChildWindow =s;
+			if(driver.getTitle().equals("Holiday Packages, Indian Holidays, Honeymoon Packages, India Tourism, Holidays India, Vacation Package : MakeMyTrip")){
+				break;
+			}
+		}
+		System.out.println(secondChildWindow);
+		driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[3]/div/div[4]/div[1]/div[1]/div/span[2]/input")).sendKeys("Jaipur");
+		//driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[3]/div/div[4]/div[1]/div[1]/div/span[2]/span/div/span/div[31]/p")).click();
+		driver.findElement(By.id("submit-btn-holiday")).click();
+		driver.findElement(By.xpath("//*[@id='suggest_Filter_TT']/p/a[2]/span[1]")).click();
+		Thread.sleep(8000);
+		//List<WebElement> explore=driver.findElements(By.linkText("Explore"));
+		
+		List<WebElement> explore=driver.findElements(By.xpath("//a[contains(@href,'javascript:void(0);')]"));
+		System.out.println(explore.size());
+		
+		for(WebElement x : explore){
+			System.out.println(x.getText());
+		}
+		
+		
+		
+		
+		/*driver.findElement(By.linkText("View Details")).click();
+		
+		allWin=driver.getWindowHandles();
+		for(String s:allWin){
+			driver.switchTo().window(s);
+			thirdChildWindow =s;
+			if(driver.getTitle().equals("Rishikesh Darshan - Book Rishikesh Darshan Tour Package at Lowest Prices : MakeMyTrip India")){
+				break;
+			}
+			
+			
+		}
+		System.out.println(thirdChildWindow);
+		driver.findElement(By.linkText("Book Online")).click();
+		driver.findElement(By.xpath("//*[@rel='rateDate_overlay' and @style]")).click();
+		driver.close();
+		driver.switchTo().window(secondChildWindow);
+		driver.close();
+		driver.switchTo().window(firstChildWindow);
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl())*/;
+		
+		
+	Thread.sleep(5000);
+	driver.close();
+		
+	}
+}

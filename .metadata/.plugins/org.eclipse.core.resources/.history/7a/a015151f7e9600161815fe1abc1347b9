@@ -1,0 +1,25 @@
+package com.selenium.project.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class FlightListPage {
+
+	WebDriver driver;
+	
+	private By searchedflightList=By.xpath("//*[@id='flightListResult' and @valign='top']/div");
+	
+	public FlightListPage(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	public int countNoOfFlights(){
+		
+		List<WebElement> fltList=driver.findElements(By.xpath(searchedflightList));
+		System.out.println("Total no of flights available="+fltList.size());
+	}
+	
+}

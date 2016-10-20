@@ -1,0 +1,65 @@
+package com.selenium.project.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class IrctcFlightSearchPage {
+
+WebDriver driver;
+Select select;
+
+
+    private By oneWayButton=By.xpath("//div[@id='showdometic']//input[@value='One way']");
+    private By roundTripButton=By.xpath("//*[@id='showdometic']//input[@value='Round trip']");
+	private By fromCity=By.xpath("//div[@id='where']/div[@class='containerfld']/input[@id='origin']");
+	private By toCity=By.xpath("//*[@id='destination']");
+	private By calender=By.xpath("//input[@name='departDate']/following-sibling::img");
+	private By departureDate=By.xpath("//div[@id='ui-datepicker-div']/div[1]//a[text()='23']");
+	private By adultsPassengerButton=By.xpath("//*[@id='noOfAdult']");
+	private By childPassengerButton=By.xpath("//*[@id='noOfChild']");
+	private By searchButton=By.xpath("//input[@name='submitVal']/following-sibling::div");
+	
+	
+	public IrctcFlightSearchPage(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	public boolean checkOneWayButtonIsSelected(){
+		boolean b1=driver.findElement(oneWayButton).isSelected();
+		return b1;
+	}
+	public boolean checkRoundTripButtonIsSelected(){
+		boolean b2=driver.findElement(roundTripButton).isSelected();
+		return b2;
+	}
+	
+	public void setFromCity(String from) throws InterruptedException{
+		driver.findElement(fromCity).sendKeys(from);
+		Thread.sleep(5000);
+		driver.findElement(fromCity).sendKeys(Keys.TAB);
+	}
+	public void toCity(String to) throws InterruptedException{
+		driver.findElement(toCity).sendKeys(to);
+		Thread.sleep(5000);
+		driver.findElement(toCity).click();
+	}
+	public void selectDepartureDate(){
+		driver.findElement(calender).click();
+		driver.findElement(departureDate).click();
+	}
+	public void setNoOfAdultPassengers(){
+		//driver.findElement(adultsPassengerButton).click();
+		select = new Select(driver.findElement(adultsPassengerButton));
+		select.selectByIndex(1);
+		
+	}
+	public void setNoOfChildPassengers(){
+		select = new Select(driver.findElement(childPassengerButton));
+		select.selectByIndex(1);
+	}
+	public void clickOnSearchFlight(){
+		driver.findElement(searchButton).click();
+	}
+}

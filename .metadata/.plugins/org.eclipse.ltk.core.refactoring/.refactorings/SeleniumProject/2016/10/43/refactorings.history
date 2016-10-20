@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.selenium.project.pages.FlightSearchList.java&apos; to &apos;FlightListPage.java&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumProject&apos;&#x0D;&#x0A;- Original element: &apos;com.selenium.project.pages.FlightSearchList.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.selenium.project.pages.FlightListPage.java&apos;" description="Rename compilation unit &apos;FlightSearchList.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/test\/java&lt;com.selenium.project.pages{FlightSearchList.java" name="FlightListPage.java" references="false" stamp="1476937556946" version="1.0"/>
+</session>

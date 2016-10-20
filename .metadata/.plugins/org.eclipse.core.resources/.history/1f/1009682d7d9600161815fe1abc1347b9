@@ -1,0 +1,15 @@
+package com.selenium.project.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class FlightSearchList {
+
+	private By fltList=By.xpath("//*[@id='flightListResult' and @valign='top']/div");
+	
+	public FlightSearchList(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package com.project2.selenium;
+
+import org.testng.annotations.Test;
+
+public class ClassB {
+
+	@Test
+	public void m1CB(){
+		
+		System.out.println("method1 of classB");
+	}
+	
+	@
+}

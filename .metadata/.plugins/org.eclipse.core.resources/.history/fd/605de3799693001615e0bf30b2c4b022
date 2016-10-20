@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Suite name="mySuite">
+<Tests>
+<Test name="myTestA">
+<classes>
+   <class name="ClassA"></class>
+   <class name="ClassB"></class>
+</classes>
+</Test>
+<Test name="myTestB">
+<classes>
+   <class name="ClassA"></class>
+   <class name="ClassB"></class>
+</classes>
+</Test>
+</Tests>
+</Suite>

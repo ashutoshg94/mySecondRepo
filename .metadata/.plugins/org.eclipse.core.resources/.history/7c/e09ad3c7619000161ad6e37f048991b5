@@ -1,0 +1,30 @@
+package com.project.selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class MakeMyTripTest {
+
+	@Test
+	public void testBookDomesticHolidays() throws InterruptedException{
+		WebDriver driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://www.makemytrip.com/");
+		
+//		Select sel=new Select(driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div[1]/div[2]/ul/li[1]/a")));
+//		sel.selectByVisibleText("Domestic Holidays");
+		driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[2]/ul/li[1]/a")).click();
+		driver.findElement(By.xpath("//*[@id='widget_row']/div[1]/div/div[1]/ul/li[5]/a/span")).click();
+		
+		
+		Thread.sleep(5000);
+		driver.close();
+		
+	}
+}
